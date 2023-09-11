@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
 </head>
+
 <body>
-   <form action="">
-    <label for="fNome">Insira o seu nome:</label>
-    <input type="text">
-   </form>
+    <form action="">
+        <fieldset>
+            <legend>Pessoal</legend>
+            <label for="Pnome">Primeiro nome:</label>
+            <input type="text" id="Pnome" name="Pnome" value="Luiza">
+             <br>
+            <label for="Snome">Sobrenome:</label>
+            <input type="text" id="Snome" name="Snome" value="Escarban da Silva">
+             <br>
+            <label for="Data">Data de nascimento:</label>
+            <input type="date" id="Data" name="Data" > 
+            <br>
+            <label for="txtNum">Idade</label>
+            <input type="number" name="txtNum" id="txtNum">
+            <br>
+        </fieldset>
+        <fieldset>
+         <legend>Curso</legend>
+        <label for="estudante">É estudante?</label>
+        <input type="radio" id="Sim" name="estudante" value="Sim">
+        <label for="Sim">Sim</label>
+        <input type="radio" id="Não" name="Não" value="Não">
+        <label for="Não">Não</label>
+        <br>
+            <label for="curso">Qual curso estuda?</label>
+            <select name="curso" id="sCurso">
+               <option value="Agro">Agropecuária</option> 
+                <option value="info">Informática</option>
+                <option value="Quimi">Química</option>
+            </select>
+            <br>
+            <label for="locomocao">Qual o seu meio de transporte até a escola?</label>
+            <input type="radio" id="Onibus" name="locomocao" value="Onibus">
+            <label for="Onibus">Onibus</label><br>
+            <input type="radio" id="Van" name="locomocao" value="Van">
+            <label for="Van">Van</label><br>
+            <input type="radio" id="Carro" name="locomocao" value="Carro">
+            <label for="Carro">Carro</label>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+            <label for="cor">Cor preferida:</label>
+            <input type="color" name="Cor" id="cor">
+            <br>
+            <label for="favLinguagem">Linguagem preferida</label>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+            <br>
+            <fieldset>
+                <legend>Cadastro:</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="Senha">Senha:</label>
+            <input type="password" id="pwd" name="pwd">
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
 </body>
+
 </html>
