@@ -5,6 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <style>
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: rgb(50, 121, 214);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=reset] {
+            width: 100%;
+            background-color:rgb(50, 121, 214);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(57, 134, 235);
+        }
+        input[type=reset]:hover {
+            background-color: rgb(57, 134, 235);
+        }
+
+        fieldset {
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,28 +57,28 @@
             <legend>Pessoal</legend>
             <label for="Pnome">Primeiro nome:</label>
             <input type="text" id="Pnome" name="Pnome" value="Luiza">
-             <br>
+            <br>
             <label for="Snome">Sobrenome:</label>
             <input type="text" id="Snome" name="Snome" value="Escarban da Silva">
-             <br>
+            <br>
             <label for="Data">Data de nascimento:</label>
-            <input type="date" id="Data" name="Data" > 
+            <input type="date" id="Data" name="Data">
             <br>
             <label for="txtNum">Idade</label>
             <input type="number" name="txtNum" id="txtNum">
             <br>
         </fieldset>
         <fieldset>
-         <legend>Curso</legend>
-        <label for="estudante">É estudante?</label>
-        <input type="radio" id="Sim" name="estudante" value="Sim">
-        <label for="Sim">Sim</label>
-        <input type="radio" id="Não" name="Não" value="Não">
-        <label for="Não">Não</label>
-        <br>
+            <legend>Curso</legend>
+            <label for="estudante">É estudante?</label>
+            <input type="radio" id="Sim" name="estudante" value="Sim">
+            <label for="Sim">Sim</label>
+            <input type="radio" id="Não" name="Não" value="Não">
+            <label for="Não">Não</label>
+            <br>
             <label for="curso">Qual curso estuda?</label>
             <select name="curso" id="sCurso">
-               <option value="Agro">Agropecuária</option> 
+                <option value="Agro">Agropecuária</option>
                 <option value="info">Informática</option>
                 <option value="Quimi">Química</option>
             </select>
@@ -60,17 +104,16 @@
             <input type="radio" id="javascript" name="fav_language" value="JavaScript">
             <label for="javascript">JavaScript</label>
         </fieldset>
-            <br>
-            <fieldset>
-                <legend>Cadastro:</legend>
+        <fieldset>
+            <legend>Cadastro:</legend>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
             <br>
             <label for="Senha">Senha:</label>
             <input type="password" id="pwd" name="pwd">
             <br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
         </fieldset>
     </form>
 </body>
